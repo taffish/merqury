@@ -1,4 +1,4 @@
-taf-merqury 1.3-r1
+taf-merqury 1.3-r2
 
 Usage:
   taf-merqury [TAF-APP-OPTION]
@@ -56,7 +56,7 @@ Notes:
     shell or container backend when you need a fixed thread count.
   - This package tracks Merqury v1.3 and bundles Meryl 1.4.1, matching current
     upstream dependency guidance. Unreleased Merqury master script behavior for
-    Verkko homopolymer-compressed hapmers is not claimed by this 1.3-r1 package.
+    Verkko homopolymer-compressed hapmers is not claimed by this 1.3-r2 package.
   - This app is linux/amd64 only. Docker and Podman runs declare
     --platform linux/amd64; arm64 hosts use container emulation.
   - Slurm _submit_*.sh scripts are included as upstream files, but sbatch is not
@@ -66,15 +66,21 @@ Notes:
   - Large example data and pre-built public Meryl databases are not bundled.
 
 Container:
-  image: ghcr.io/taffish/merqury:1.3-r1
+  image: ghcr.io/taffish/merqury:1.3-r2
   bundled meryl: 1.4.1
   supported backends: apptainer, podman, docker
   supported platforms: linux/amd64
+
+License:
+  TAFFISH app packaging: Apache-2.0.
+  Upstream software: Public Domain.
+  Bundled components, data, models, and external resources keep their
+  own license terms.
 
 Upstream:
   project: Merqury
   source:  https://github.com/marbl/merqury
   release: https://github.com/marbl/merqury/releases/tag/v1.3
   bundled meryl: https://github.com/marbl/meryl/releases/tag/v1.4.1
-  license: Public Domain / United States Government Work notice
+  upstream license: Public Domain / United States Government Work notice
   citation: Rhie et al. 2020, doi:10.1186/s13059-020-02134-9, PMID:32928274

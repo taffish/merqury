@@ -20,7 +20,7 @@ taf install merqury
 Install the exact release:
 
 ```sh
-taf install merqury 1.3-r1
+taf install merqury 1.3-r2
 ```
 
 For local testing before the app is published to the public index:
@@ -215,7 +215,7 @@ release, while bundling Meryl `v1.4.1` because current upstream Merqury
 documentation recommends latest Meryl/Merqury and lists Meryl `v1.4.1` as the
 dependency. Merqury scripts are still from the `v1.3` tag, so unreleased
 Merqury `master` script behavior for Verkko homopolymer-compressed hapmers is
-not claimed by this `1.3-r1` package.
+not claimed by this `1.3-r2` package.
 
 The Slurm `_submit_*.sh` wrappers are included as upstream files, but the image
 does not bundle or configure Slurm `sbatch`; adapt those scripts to your site
@@ -253,13 +253,17 @@ not validate large-genome performance, biological accuracy, trio switch-error
 interpretation, Slurm submission, BigWig conversion, or external database
 download workflows.
 
+## License Boundary
+
+The TAFFISH app packaging files are licensed under Apache-2.0. The packaged upstream Merqury software is covered by: Public Domain. Bundled third-party components, datasets, models, and external resources keep their own license terms.
+
 ## Upstream
 
 - Project: Merqury
 - Source: <https://github.com/marbl/merqury>
 - Release: <https://github.com/marbl/merqury/releases/tag/v1.3>
 - Bundled Meryl: <https://github.com/marbl/meryl/releases/tag/v1.4.1>
-- License: Public Domain / United States Government Work notice
+- Upstream license: Public Domain / United States Government Work notice
 - Citation: Rhie et al. 2020, doi:10.1186/s13059-020-02134-9, PMID:32928274
 
 The repository wrapper files follow the same public-domain notice as upstream

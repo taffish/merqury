@@ -1,2 +1,0 @@
-<taf-app:container:ghcr.io/taffish/merqury:1.3-r1$@[docker/podman: --platform linux/amd64]>
-merqury.sh ::*ARGV*::

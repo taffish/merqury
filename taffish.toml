@@ -2,8 +2,8 @@
 name = "merqury"
 kind = "tool"
 version = "1.3"
-release = 1
-license = "Public Domain"
+release = 2
+license = "Apache-2.0"
 main = "src/main.taf"
 
 [meta]
@@ -23,7 +23,7 @@ pipe = true
 command_mode = true
 
 [container]
-image = "ghcr.io/taffish/merqury:1.3-r1"
+image = "ghcr.io/taffish/merqury:1.3-r2"
 dockerfile = "docker/Dockerfile"
 build_platforms = "linux/amd64"
 
@@ -39,7 +39,7 @@ license = "Public Domain"
 citation = "Rhie et al. 2020"
 doi = "10.1186/s13059-020-02134-9"
 pmid = "32928274"
-watch = "github-releases"
+watch = "tags"
 strip_prefix = "v"
 
 [smoke]
